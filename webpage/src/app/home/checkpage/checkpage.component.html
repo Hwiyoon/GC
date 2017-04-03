@@ -1,0 +1,16 @@
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav" mode="side" opened="{{sideBarStatus}}">
+    <a routerLink="attendencelistpage">Attendence</a>
+    <br>
+    <a routerLink="qrcodepage">QRcode</a>
+  </md-sidenav>
+
+  <div class="example-sidenav-content">
+    <button md-button (click)="changeTheSideBar()">
+      <md-icon class="example-icon">list</md-icon>
+    </button>
+  </div>
+
+  <router-outlet></router-outlet>
+
+</md-sidenav-container>

@@ -1,0 +1,17 @@
+<div>
+  <md-input-container>
+    <input [(ngModel)]="id" mdInput placeholder="아이디">
+  </md-input-container>
+  <br>
+  <md-input-container>
+    <input [(ngModel)]="password" mdInput placeholder="비밀번호">
+  </md-input-container>
+  <br>
+
+  <button md-raised-button color="primary" (click)="loginProcess()">로그인</button>
+  <button md-raised-button color="accent">회원가입</button>
+</div>
+
+<md-spinner
+*ngIf="loginstatus">
+</md-spinner>
